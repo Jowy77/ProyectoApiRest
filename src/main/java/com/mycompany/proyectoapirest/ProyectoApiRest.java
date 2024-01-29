@@ -36,12 +36,21 @@ public class ProyectoApiRest {
         System.out.println("Países que utilizan la moneda EUR:\n" + countriesUsingCurrencyData);
 
         Gson gson = new Gson();
+        
+        
+       
 
         Type listType = new TypeToken<List<Root>>() {}.getType();
         List<Root> paises = gson.fromJson(allCountriesData, listType);
-
+        
+        List<Root> pais1 = gson.fromJson(countryByIdData, listType);
+        
         for (Root pais : paises) {
-            System.out.println(pais.toString());
+            System.out.println(pais);
+        }
+        
+        for(Root paisBuscado : pais1){
+            System.out.println(paisBuscado);
         }
     }
 }
