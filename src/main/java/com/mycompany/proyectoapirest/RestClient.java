@@ -2,7 +2,6 @@ package com.mycompany.proyectoapirest;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.net.http.HttpResponse;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -25,7 +24,7 @@ public class RestClient {
     }
 
     public String getCountryByCode(String value) {
-        return sendGetRequest("alpha/"+value);
+        return sendGetRequest("alpha/" + value);
     }
 
     public String getCountryByName(String name) {
