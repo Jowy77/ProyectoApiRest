@@ -41,7 +41,7 @@ public class ResultadosGetView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("RESULTADOS GET");
+        jLabel1.setText("RESULTADOS GET/POST");
 
         resultadosTextArea.setColumns(20);
         resultadosTextArea.setRows(5);
@@ -68,7 +68,7 @@ public class ResultadosGetView extends javax.swing.JFrame {
                         .addGap(69, 69, 69)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
+                        .addGap(99, 99, 99)
                         .addComponent(jLabel1)))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
